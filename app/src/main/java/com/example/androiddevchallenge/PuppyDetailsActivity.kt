@@ -52,7 +52,7 @@ fun ShowPuppyDetails(puppy: PuppyInfo) {
            .fillMaxWidth()
            .height(250.dp)) {
            Image(painter = painterResource(puppy.imageResourceId), contentDescription = null,
-               contentScale = ContentScale.Crop)
+               contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
              Box(contentAlignment = Alignment.BottomEnd,
                  modifier = Modifier
                      .fillMaxSize()

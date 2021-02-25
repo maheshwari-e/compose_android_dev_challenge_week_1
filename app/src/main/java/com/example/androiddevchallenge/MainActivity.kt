@@ -94,7 +94,8 @@ fun Puppy(puppy: PuppyInfo, onClick: (PuppyInfo) -> Unit) {
                 Image(
                     painter = painterResource(puppy.imageResourceId),
                     contentDescription = null,
-                    contentScale = ContentScale.Crop
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier.fillMaxSize()
                 )
                 Box(contentAlignment = Alignment.BottomEnd,
                     modifier = Modifier.fillMaxSize().padding(4.dp)){
